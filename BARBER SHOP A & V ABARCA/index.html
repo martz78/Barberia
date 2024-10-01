@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>BARBER SHOP A&V ABARCA</title>
+  <link rel="stylesheet" href="css/bulma.min.css">
+  <link rel="stylesheet" href="css/material-design-iconic-font.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+</head>
+
+<body>
+ <nav class="navbar">
+    <!-- Nabvar header -->
+    <header class="navbar-header" id="navbar-header">
+      <a href="#" class="brand-link is-size-3">
+        <img src="img/barber.png" width="50px" height="50px" alt="">
+        <span style="color: #08E8DE;" class="brand">BARBER SHOP A&V ABARCA</span>
+      </a>
+      <button class="navbar-menu-mobile open is-size-3 is-hidden-desktop" id="navbar-menu-mobile">
+        <i class="zmdi zmdi-menu"></i>
+      </button>
+    </header>
+
+    <!-- Navbar container -->
+    <ul class="navbar-container" id="navbar-container">
+      <li class="navbar-item">
+        <a data-scroll href="#top" id="inicio" class="navbar-a navbar-link-active">Inicio</a>
+      </li>
+      <li class="navbar-item">
+        <a data-scroll href="#about" id="acercaDe" class="navbar-a">Mi Perfil</a>
+      </li>
+      <li class="navbar-item">
+        <a data-scroll href="#section2" id="section" class="navbar-a">Especialidad</a>
+      </li>
+      <li class="navbar-item">
+        <a data-scroll href="#gallery" id="photos" class="navbar-a">Fotos</a>
+      </li>
+      <li class="navbar-item">
+        <a data-scroll href="#contacto" id="form" class="navbar-a">Contacto</a>
+      </li>
+    </ul>
+  </nav>
+
+  
+  <br>
+  <!-- Sección del carrusel -->
+
+  <div class="section-body" id="top">
+    <div class="slide-contenedor">
+      <div class="miSlider fade">
+        <div class="slider-body">
+        </div>
+        <img src="img/banners1.jpg" alt="">
+      </div>
+      <div class="miSlider fade">
+        <div class="slider-body">
+        </div>
+        <img src="img/banners2.jpg" alt="">
+      </div>
+      <div class="miSlider fade">
+        <div class="slider-body">
+        </div>
+        <img src="img/banners3.jpg" alt="">
+      </div>
+      <div class="direcciones">
+        <a href="#" class="atras" onclick="avanzaSlide(-1)">&#10094;</a>
+        <a href="#" class="adelante" onclick="avanzaSlide(1)">&#10095;</a>
+      </div>
+      <div class="dots">
+        <span class="dot active" onclick="posicionSlide(1)"></span>
+        <span class="dot" onclick="posicionSlide(2)"></span>
+        <span class="dot" onclick="posicionSlide(3)"></span>
+      </div>
+    </div>
+    <br>
+  
+    <!-- About me -->
+    <div class="container" id="about">
+      <div class="columns is-vcentered">
+        <div class="column is-half">
+          <div class="about-me">
+            <figure class="image">
+              <img class="about-me-img" src="img/barbero.avif" alt="">
+            </figure>
+          </div>
+        </div>
+        <div class="column is-half section-about-me">
+          <h1 style="text-align: center;" class="title is-size-3-mobile is-size-2-tablet has-text-weight">Mi Perfil</h1>
+          <h5 class="subtitle is-size-6-mobile is-size-5-tablet separator"><h2>✂️ Bienvenido a BARBER SHOP A&V ABARCA ✂️</h2><br>
+            <p> Transformo tu estilo con cada corte. Aquí, cada detalle cuenta y tu satisfacción es mi prioridad. Ya sea un afeitado clásico, un corte moderno o un diseño personalizado, estoy aquí para realzar tu personalidad y darte ese toque único.</p>
+            <br>
+           <p> 🌟 ¿Por qué elegirnos?</p>
+           <br>
+            <p>  Atención personalizada
+              Técnicas de afeitado tradicionales
+              Ambiente relajado y amigable
+              Productos de alta calidad
+              Déjate llevar y disfruta de una experiencia de barbería que va más allá de lo convencional.</p>
+            <br>
+           <p>¡Reserva tu cita y dale a tu look el cuidado que merece!</p>
+
+        </div>
+      </div>
+    </div>
+    <br>
+
+    <div id="section2" class="hero my-hero" style="--banner: url(../img/hero-img.jpg); --bg-atachment: fixed;">
+      <div class="container-hero">
+
+        <div class="container">
+          <div class="columns is-multiline">
+            <div class="column is-full has-text-centered">
+              <h1 class="title has-text-white is-size-3-mobile is-size-1-tablet">
+                mi especialidad
+              </h1>
+              
+              </h5>
+            </div>
+            <div class="column">
+              <div class="banner-container">
+                <span class="container-icon">
+                  <img src="img/corte.png" width="1000px" height="1000px" >
+                </span>
+                <h4 class="is-size-5 has-text-centered has-text-weight-bold">Cortes de Cabello</h4>
+                <p class="has-text-centered is-size-7-mobile">"En cada hebra suelta, danza la luz,
+                  un corte que brilla, revela tu cruz."</p>
+              </div>
+            </div>
+            <div class="column">
+              <div class="banner-container">
+                <span class="container-icon">
+                  <img src="img/facial.png" alt="">
+                </span>
+                <h4 class="is-size-5 has-text-centered has-text-weight-bold">Tratamientos Faciales para Caballeros</h4>
+                <p class="has-text-centered is-size-7-mobile">"Con cada toque suave, renace la piel,
+                  hidratación y brillo, un nuevo amanecer."</p>
+              </div>
+            </div>
+            
+            <div class="column">
+              <div class="banner-container">
+                <span class="container-icon">
+                  <img src="img/afeitado.png" alt="">
+                </span>
+                <h4 class="is-size-5 has-text-centered has-text-weight-bold">Afeitado</h4>
+                <p class="has-text-centered is-size-7-mobile">"Cuchilla que desliza, con arte y con calma,
+                  un rostro afeitado, refleja la palma."</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Galería -->
+    <div class="container" id="gallery">
+      <div class="columns is-multiline">
+        <div class="column has-text-centered is-full">
+          <h1 class="title is-size-3-mobile is-size-1-tablet has-text-weight">Fotos</h1>
+          <h5 class="subtitle is-size-6">Cortés que cuentan tu historia</h5>
+        </div>
+        <div class="column">
+          <div class="gallery-container" id="gallery-container">
+            
+            <div class="gallery-item">
+              <figure class="image">
+                <img class="gallery-img" src="img/corte2.jpg" alt="">
+              </figure>
+            </div>
+            <div class="gallery-item">
+              <figure class="image">
+
+                <img class="gallery-img" src="img/corte3.webp" alt="">
+              </figure>
+            </div>
+            <div class="gallery-item">
+              <figure class="image">
+                <img class="gallery-img" src="img/corte4.jpg" alt="">
+              </figure>
+            </div>
+            <div class="gallery-item">
+              <figure class="image">
+                <img class="gallery-img" src="img/corte11.jpg" alt="">
+              </figure>
+            </div>
+            <div class="gallery-item">
+              <figure class="image">
+                <img class="gallery-img" src="img/corte6.jpg" alt="">
+              </figure>
+            </div>
+            <div class="gallery-item">
+              <figure class="image">
+                <img class="gallery-img" src="img/corte7.png" alt="">
+              </figure>
+            </div>
+            <div class="gallery-item">
+              <figure class="image">
+                <img class="gallery-img" src="img/corte8.webp" alt="">
+              </figure>
+            </div>
+            <div class="gallery-item">
+              <figure class="image">
+                <img class="gallery-img" src="img/corte9.jpg" alt="">
+              </figure>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+   
+   
+    <!-- Contacto -->
+    <div class="container" id="contacto">
+      <div class="columns is-multiline">
+        <div class="column has-text-centered is-full">
+          <h1 class="title is-size-3-mobile is-size-1-tablet has-text-weight">Contactenos</h1>
+
+    <div class="button-container">
+      <button class="whatsapp-button" onclick="sendWhatsApp()">Enviar WhatsApp</button>
+  </div>
+  </div>
+  </div>
+ 
+  <script>
+      function sendWhatsApp() {
+          var phoneNumber = '60369120'; // Reemplaza con el número de teléfono
+          var message = 'Hola, un gusto saludarte. He visto tu trabajo y quiero más información. Mi nombre es: '; // Mensaje predeterminado
+          var url = 'https://api.whatsapp.com/send?phone=' + phoneNumber + '&text=' + encodeURIComponent(message);
+          window.open(url, '_blank');
+      }
+  </script>
+     </div>
+   
+   
+    <!-- Footer -->
+    <footer class="my-footer">
+      <div class="hero my-hero" style="--banner: url(../img/footer-banner.jpg); --bg-atachment: none;">
+        <div class="container-hero">
+          <div class="columns is-multiline">
+            <div class="column is-full has-text-centered">
+              <div style="font-size: 50px;" class="column is-full">
+                <ul class="my-footer-ul">
+                  <li class="my-footer-item">
+                    <a href="https://www.facebook.com/?locale=es_LA" target="_blank" style="color: #1877F2;"><i class="bi bi-facebook"></i></a>
+                  </li>
+                  <li class="my-footer-item">
+                    <a href="https://www.instagram.com/" target="_blank" style="background: -webkit-linear-gradient(#f09433, #e6683c, #dc2743, #cc2366, #bc1888); -webkit-background-clip: text; -webkit-text-fill-color: transparent;"><i class="bi bi-instagram"></i></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="column has-text-centered is-size-7-mobile is-full">
+              <p class="footer-p has-text-white">© 2024 BARBER SHOP A&V ABARCA. Todos los derechos reservados</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+  <script src="js/smooth-scroll.min.js"></script>
+  <script src="js/main.js"></script>
+
+</body>
+</html>
